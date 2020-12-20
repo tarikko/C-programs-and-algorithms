@@ -16,19 +16,21 @@ int main()
         }
     }
     printf("\n");
+    
     printf("This number is an ");
     if(num%2 == 0) {
         printf("even number, ");
     } else {
         printf("odd number, ");
     }
+    
     printf("and it is ");
     if(number_of_devisors == 2) {
         printf("a prime number.");
     } else {
         printf("not a prime number.");
     }
-    Is_prime(number_of_devisors);
+
     return 0;
 }
 //This program was created by Tarik Abdelkader
