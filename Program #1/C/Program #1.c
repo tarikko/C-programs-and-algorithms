@@ -1,25 +1,5 @@
 #include <stdio.h>
 
-/*
-This program is so straight forward, so it should be understandable without comments (considering that you know C) ;).
-*/
-
-int Is_even_or_odd(int number) {
-    if(number%2 == 0) {
-        printf("even number, ");
-    } else {
-        printf("odd number, ");
-    }
-}
-
-int Is_prime(int devisors) {
-    if(devisors == 2) {
-        printf("a prime number.");
-    } else {
-        printf("not a prime number.");
-    }
-}
-
 int main()
 {   
     int num;  
@@ -37,10 +17,18 @@ int main()
     }
     printf("\n");
     printf("This number is an ");
-    Is_even_or_odd(num);
+    if(num%2 == 0) {
+        printf("even number, ");
+    } else {
+        printf("odd number, ");
+    }
     printf("and it is ");
+    if(number_of_devisors == 2) {
+        printf("a prime number.");
+    } else {
+        printf("not a prime number.");
+    }
     Is_prime(number_of_devisors);
     return 0;
 }
-
 //This program was created by Tarik Abdelkader
