@@ -9,12 +9,22 @@ int main()
     scanf("%d", &num);
 
     printf("The divisors of %d are : ", num);
+    if (num > 0) {
     for (int i = 1; i <= num; i++){
         if (num%i == 0) {
             printf("%d ", i);
             number_of_devisors++;
         }
     }
+    } else {
+    for (int i = -1; i >= num; i--){
+        if (num%i == 0) {
+            printf("%d ", i);
+            number_of_devisors++;
+        }
+    }
+    }
+
     printf("\n");
     
     printf("This number is an ");
